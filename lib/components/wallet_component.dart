@@ -8,7 +8,7 @@ class WalletComponent extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.fromLTRB(5, 8, 5, 0),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           WalletIcon(
             imgPath: "assets/logos/phone_pe_wallet-1-removebg-preview.png",

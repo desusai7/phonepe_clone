@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:phonepe/widgets/icons_grid.dart';
 import '../widgets/widgets.dart';
 import '../data/data.dart';
 
-class RechargeAndBillsComponent extends StatelessWidget {
-  RechargeAndBillsComponent({super.key});
+class StoresScreen extends StatelessWidget {
+  StoresScreen({super.key});
 
   final List<GridIconModel> gridIcons = [
     GridIconModel(
