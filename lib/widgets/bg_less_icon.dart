@@ -12,18 +12,18 @@ class BgLessIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-        height: 110,
-        width: 70,
+        height: 60,
+        width: 60,
         child: Column(
           children: [
             Image.asset(
               imgPath,
-              width: 55,
-              height: 55,
+              width: 50,
+              height: 50,
               fit: BoxFit.fill,
             ),
             const SizedBox(
-              height: 1,),
+              height: 3,),
             Text(
               imgTxt,
               overflow: TextOverflow.ellipsis,
@@ -31,7 +31,7 @@ class BgLessIcon extends StatelessWidget {
               textAlign: TextAlign.center,
               style: const TextStyle(
                   color: Colors.white,
-                  fontSize: 9,
+                  fontSize: 12,
                   fontWeight: FontWeight.w500),
             )
           ],

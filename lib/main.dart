@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'data/data.dart';
 import 'screens/screens.dart';
 
+GlobalKey homeKey = GlobalKey();
+GlobalKey storeKey = GlobalKey();
+GlobalKey insuranceKey = GlobalKey();
+GlobalKey wealthKey = GlobalKey();
+GlobalKey historyKey = GlobalKey();
+
 void main() {
   runApp(const MyApp());
 }
@@ -35,12 +41,19 @@ final GlobalKey _sliderKey = GlobalKey();
 
 List navScreens = [
   HomeScreen(
+    key: homeKey,
     sliderKey: _sliderKey,
   ),
-  StoresScreen(),
-  const InsuranceScreen(),
-  const WealthScreen(),
-  const HistoryScreen(),
+  StoresScreen(
+    key: storeKey,
+  ),
+  InsuranceScreen(
+    key: insuranceKey,
+  ),
+  WealthScreen(key: wealthKey),
+  HistoryScreen(
+    key: historyKey,
+  ),
 ];
 
 class MyHomePage extends StatefulWidget {
@@ -50,7 +63,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 0;
+  int _selectedIndex = 1;
 
   void _onSelectedIndexChange(int index) {
     setState(() {

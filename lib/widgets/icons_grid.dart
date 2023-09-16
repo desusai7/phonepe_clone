@@ -67,8 +67,8 @@ class IconsGrid extends StatelessWidget {
           Expanded(
             child: GridView.count(
                 primary: false,
-                padding: const EdgeInsets.all(20),
-                crossAxisSpacing: 10,
+                padding: const EdgeInsets.all(15),
+                crossAxisSpacing: 1.5,
                 mainAxisSpacing: 15,
                 crossAxisCount: 4,
                 children: gridViewChildren),
